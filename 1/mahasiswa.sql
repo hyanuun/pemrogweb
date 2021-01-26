@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 26 Jan 2021 pada 07.55
+-- Waktu pembuatan: 26 Jan 2021 pada 08.10
 -- Versi server: 10.4.16-MariaDB
 -- Versi PHP: 7.4.12
 
@@ -31,18 +31,19 @@ CREATE TABLE `mahasiswa` (
   `npm` varchar(10) NOT NULL,
   `nama` varchar(255) NOT NULL,
   `alamat` varchar(255) NOT NULL,
-  `agama` varchar(50) DEFAULT NULL
+  `agama` varchar(50) DEFAULT NULL,
+  `gambar` longblob NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data untuk tabel `mahasiswa`
 --
 
-INSERT INTO `mahasiswa` (`npm`, `nama`, `alamat`, `agama`) VALUES
-('19.01.0001', 'Mahasiswa Satu', 'Sleman, YK', NULL),
-('19.01.0002', 'Mahasiswa', 'Bantul, YK', ''),
-('19.11.2595', 'Aini', 'klaten', 'islam'),
-('19029993', 'fafa', 'klaten', 'Islam');
+INSERT INTO `mahasiswa` (`npm`, `nama`, `alamat`, `agama`, `gambar`) VALUES
+('19.01.0001', 'Mahasiswa Satu', 'Sleman, YK', NULL, ''),
+('19.01.0002', 'Mahasiswa', 'Bantul, YK', '', ''),
+('19.11.2595', 'Aini', 'klaten', 'islam', ''),
+('19029993', 'fafa', 'klaten', 'Islam', '');
 
 --
 -- Indexes for dumped tables
